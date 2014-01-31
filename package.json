@@ -1,0 +1,16 @@
+{
+  "name": "keycode.js",
+  "version": "1.0.0",
+  "author": "Jonathan Tang",
+  "description": "An AMD compliant version of <https://github.com/nostrademons/keycode.js>.",
+  "private": "true",
+  "contributors": "Brendan Studds <brendan.studds@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mantelpiece/keycode.js"
+  },
+  "keywords": [
+    "keyboard",
+    "events"
+  ]
+}
