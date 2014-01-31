@@ -1,3 +1,8 @@
+This forked repo of https://github.com/nostrademons/keycode.js adapts
+Keycode.js to an AMD module.
+
+-----
+
 This is a library for normalizing JavaScript key codes across browsers.  It's based on the article "JavaScript Madness: Keyboard Events" by Jan Wolter:
 
 http://unixpapa.com/js/key.html
