@@ -190,15 +190,15 @@ define([
             && key1.alt === key2.alt
             && key1.shift === key2.shift;
     }
-    if(typeof window.KeyCode != "undefined") {
-        var _KeyCode = window.KeyCode;
-    }
+    //if(typeof window.KeyCode != "undefined") {
+    //    var _KeyCode = window.KeyCode;
+    //}
      //
     var KeyCode = {
-        no_conflict: function() {
-            window.KeyCode = _KeyCode;
-            return KeyCode;
-        },
+        //no_conflict: function() {
+        //    window.KeyCode = _KeyCode;
+        //    return KeyCode;
+        //},
          /** Generates a function key code from a number between 1 and 12 */
         fkey: function(num) { return 111 + num; },
          /**
@@ -240,7 +240,8 @@ define([
          * { int code; boolean shift, boolean alt, boolean ctrl }
          */
         translate_event: function(e) {
-            e = e || window.event;
+            //e = e || window.event;
+            if (e === undefined) throw new Error('Must provide event object to translate');
             var code = e.which || e.keyCode;
             return {
                 code: KeyCode.translate_key_code(code),
